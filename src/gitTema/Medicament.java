@@ -1,6 +1,6 @@
 package gitTema;
 
-public class Medicament {
+public class Medicament implements MetodeMedicamente {
 	String nume;
 	float pret;
 	
@@ -10,5 +10,9 @@ public class Medicament {
 		this.pret = pret;
 	}
 	
+	@Override
+	public void actualizareNume(String nume) {
+		this.nume = nume;
+	}
 	
 }
